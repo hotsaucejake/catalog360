@@ -156,6 +156,13 @@ return [
             'url'   => 'admin/pages',
             'image' => '/images/widget-backgrounds/04.png',
         ],
+        [
+            'name'  => 'Vendor',
+            'icon'  => 'voyager-thumbs-up',
+            'model' => App\Vendor::class,
+            'url'   => 'admin/vendors',
+            'image' => '/images/widget-backgrounds/04.png',
+        ],
     ],
 
     /*
@@ -192,8 +199,6 @@ return [
 
         'widgets' => [
             'TCG\\Voyager\\Widgets\\UserDimmer',
-            'TCG\\Voyager\\Widgets\\PostDimmer',
-            'TCG\\Voyager\\Widgets\\PageDimmer',
         ],
 
     ],
