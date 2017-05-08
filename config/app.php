@@ -168,6 +168,7 @@ return [
          */
         Laravel\Tinker\TinkerServiceProvider::class,
         \SocialiteProviders\Manager\ServiceProvider::class,
+        TCG\Voyager\VoyagerServiceProvider::class,
 
         /*
          * Application Service Providers...

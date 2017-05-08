@@ -25,3 +25,8 @@ Route::get('auth/azure/callback', ['as' => 'auth/azure/callback', 'uses' => 'Aut
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
