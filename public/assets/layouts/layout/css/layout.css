@@ -67,7 +67,7 @@ Page Header
       display: inline-block;
       float: left; }
     .page-header.navbar .page-logo .logo-default {
-      margin: 9px 0 0 0; max-width: 160px; }
+      margin: 9px 0 0 0; max-width: 160px; max-height:30px;}
     .page-header.navbar .page-logo .logo-mini {
       display: none;
       margin-left: 5px; }
