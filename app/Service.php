@@ -11,4 +11,9 @@ class Service extends Model
    {
       return $this->belongsTo(\App\Vendor::class, 'vendor_id');
    }
+   
+   public function vendor()
+   {
+      return $this->belongsTo(\App\Vendor::class);
+   }
 }

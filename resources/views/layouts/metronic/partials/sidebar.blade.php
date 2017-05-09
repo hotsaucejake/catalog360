@@ -27,8 +27,29 @@
                    <span class="title">Dashboard</span>
                 </a>
             </li>
+            
+            <li class="nav-item  ">
+              <a href="javascript:;" class="nav-link nav-toggle">
+                  <i class="fa fa-th-list"></i>
+                  <span class="title">Catalog</span>
+                  <span class="arrow"></span>
+              </a>
+              <ul class="sub-menu">
+                  <li class="nav-item  ">
+                      <a href="/datatable" class="nav-link ">
+                        <i class="fa fa-table"></i>
+                          <span class="title">Datatable</span>
+                      </a>
+                  </li>
 
+              </ul>
+            </li>
 
+            <li class="heading">
+                 <h3 class="uppercase"></h3>
+             </li>
+             
+             
             <li class="nav-item  ">
                 <a class="btn red" href="/admin">
                    <i class="fa fa-user font-white"></i>
