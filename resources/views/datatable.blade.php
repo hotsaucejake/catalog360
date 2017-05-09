@@ -26,23 +26,23 @@
                 </div>
                 <div class="tools"> </div>
             </div>
-            
+
             <div class="portlet-body">
                 <table class="table table-striped table-bordered table-hover dt-responsive" width="100%" id="catalog">
                     <thead>
                         <tr>
                            <!-- all min-phone-l min-tablet none desktop -->
-                           <th class="all">sku</th>
-                           <th class="all">area</th>
-                           <th class="none">description</th>
-                           <th class="all">vendor</th>
-                           <th class="desktop">internal_unit_cost</th>
-                           <th class="desktop">unit</th>
-                           <th class="all">suggested_cost</th>
-                           <th class="desktop">min_commitment</th>
-                           <th class="desktop">sla</th>
-                           <th class="none">comments</th>
-                           <th class="none">image</th>
+                           <th class="all">SKU</th>
+                           <th class="all">AREA</th>
+                           <th class="none">DESCRIPTION: </th>
+                           <th class="all">VENDOR</th>
+                           <th class="desktop">INTERNAL UNIT COST</th>
+                           <th class="desktop">UNIT</th>
+                           <th class="all">SUGGESTED COST</th>
+                           <th class="desktop">MIN COMMITMENT</th>
+                           <th class="desktop">SLA</th>
+                           <th class="none">COMMENTS: </th>
+                           <th class="none">IMG: </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -58,13 +58,17 @@
                            <td>{{ $service->min_commitment }}</td>
                            <td>{{ $service->sla }}</td>
                            <td>{{ $service->comments }}</td>
-                           <td>{{ $service->image }}</td>
+                           <td>
+                              @if($service->image)
+                                <img src="/storage/{{ $service->image }}" class="img-responsive img-thumbnail" style="max-width:200px">
+                              @endif
+                           </td>
 
                         </tr>
-                        
+
                      @endforeach
 
-                        
+
                     </tbody>
                 </table>
             </div>
@@ -77,7 +81,6 @@
 
 
 @section('foot-page-level-plugins')
-<script src="/assets/global/scripts/datatable.js" type="text/javascript"></script>
 <script src="/assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
 <script src="/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
 @endsection
