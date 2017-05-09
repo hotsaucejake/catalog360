@@ -27,6 +27,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/datatable', 'DatatableController@index');
+Route::get('/card', 'CardController@index');
 
 
 Route::group(['prefix' => 'admin'], function () {

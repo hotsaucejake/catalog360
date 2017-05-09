@@ -27,7 +27,7 @@
                    <span class="title">Dashboard</span>
                 </a>
             </li>
-            
+
             <li class="nav-item  ">
               <a href="javascript:;" class="nav-link nav-toggle">
                   <i class="fa fa-th-list"></i>
@@ -42,14 +42,20 @@
                       </a>
                   </li>
 
+                  <li class="nav-item  ">
+                      <a href="/card" class="nav-link ">
+                        <i class="fa fa-clone"></i>
+                          <span class="title">Cards</span>
+                      </a>
+                  </li>
               </ul>
             </li>
 
             <li class="heading">
                  <h3 class="uppercase"></h3>
              </li>
-             
-             
+
+
             <li class="nav-item  ">
                 <a class="btn red" href="/admin">
                    <i class="fa fa-user font-white"></i>
