@@ -25,6 +25,10 @@ class ServicesController extends Controller
       $services->map(function ($service) {
          $service['vendor'] = $service->vendor;
       });
+      
+      $services->map(function ($service) {
+         $service->image = 'https://catalog.corus360.com/storage/' . $service->image;
+      });
 
 
       return response()->json($services);
