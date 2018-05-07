@@ -16,4 +16,12 @@ class Service extends Model
    {
       return $this->belongsTo(\App\Vendor::class);
    }
+
+   /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function categoryId()
+    {
+        return $this->belongsTo(\Voyager::modelClass('Category'), 'category_id');
+    }
 }
