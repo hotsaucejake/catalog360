@@ -18,3 +18,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/services', 'ServicesController@index');
+
+Route::resource('authenticate', 'AuthenticateController', ['only' => ['index']]);
+Route::post('authenticate', 'AuthenticateController@authenticate');

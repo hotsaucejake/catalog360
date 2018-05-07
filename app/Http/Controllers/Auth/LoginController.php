@@ -52,7 +52,7 @@ class LoginController extends Controller
     {
          try {
 
-            $azureUser = Socialite::with('azure')->user();
+            $azureUser = Socialite::with('azure')->stateless()->user();
 
          } catch (Exception $e){
 
