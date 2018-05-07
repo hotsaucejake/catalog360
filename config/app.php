@@ -178,8 +178,10 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        
+
         Barryvdh\Cors\ServiceProvider::class,
+
+        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
 
     ],
 
@@ -231,6 +233,9 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+
+        'JWTAuth'   => Tymon\JWTAuthFacades\JWTAuth::class,
+        'JWTFactory' => Tymon\JWTAuthFacades\JWTFactory::class,
 
     ],
 

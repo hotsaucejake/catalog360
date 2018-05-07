@@ -11,7 +11,8 @@
         "laravel/socialite": "^3.0",
         "laravel/tinker": "~1.0",
         "socialiteproviders/microsoft-azure": "^3.0",
-        "tcg/voyager": "0.11.10"
+        "tcg/voyager": "0.11.10",
+	"tymon/jwt-auth": "0.5.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
