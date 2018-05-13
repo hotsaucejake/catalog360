@@ -19,5 +19,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/services', 'ServicesController@index');
 
+Route::group(['prefix' => 'atg'], function () {
+    Route::get('/services', 'ServicesController@atg');
+});
+
+Route::group(['prefix' => 'transform360'], function () {
+    Route::get('/services', 'ServicesController@transform360');
+});
+
 Route::resource('authenticate', 'AuthenticateController', ['only' => ['index']]);
 Route::post('authenticate', 'AuthenticateController@authenticate');
