@@ -15,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
     {
       // allow registration from particular domains
          \Validator::extend('email_domain', function($attribute, $value, $parameters, $validator) {
-              $allowedEmailDomains = ['corus360.com', 'resqdr.com'];
+              $allowedEmailDomains = ['corus360.com', 'resqdr.com', 'bluechiptek.com', 'keyinfo.com'];
               return in_array( explode('@', $parameters[0])[1] , $allowedEmailDomains);
          });
     }
